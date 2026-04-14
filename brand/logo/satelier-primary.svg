@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 600 220"
+     role="img"
+     aria-label="S'Atelier — Maison de Création">
+  <title>S'Atelier — logo primar</title>
+  <desc>Logo orizontal pentru S'Atelier, serif elegant cu accent ornamental de ac și fir.</desc>
+
+  <defs>
+    <style>
+      .ink      { fill: #1a1a1a; }
+      .gold     { fill: #b8860b; }
+      .gold-s   { stroke: #b8860b; stroke-width: 1.4; fill: none; stroke-linecap: round; }
+      .wordmark {
+        font-family: "Didot", "Bodoni 72", "Playfair Display", "Cormorant Garamond", "Georgia", serif;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+      }
+      .tagline  {
+        font-family: "Futura", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.52em;
+      }
+    </style>
+  </defs>
+
+  <!-- Linie ornamentală superioară -->
+  <g class="gold-s">
+    <line x1="120" y1="52" x2="260" y2="52"/>
+    <circle cx="300" cy="52" r="3.2" fill="#b8860b" stroke="none"/>
+    <line x1="340" y1="52" x2="480" y2="52"/>
+  </g>
+
+  <!-- Wordmark principal -->
+  <text x="300" y="130"
+        class="wordmark ink"
+        text-anchor="middle"
+        font-size="82"
+        font-style="italic">S<tspan class="gold" font-style="normal">’</tspan>Atelier</text>
+
+  <!-- Ac și fir stilizat sub wordmark -->
+  <g transform="translate(300 158)">
+    <!-- firul -->
+    <path d="M -90 0 C -60 -10, -30 10, 0 0 C 30 -10, 60 10, 90 0"
+          fill="none" stroke="#b8860b" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- urechea acului -->
+    <circle cx="90" cy="0" r="2.4" fill="none" stroke="#b8860b" stroke-width="1.2"/>
+    <!-- vârful acului -->
+    <line x1="-90" y1="0" x2="-98" y2="0" stroke="#1a1a1a" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Tagline -->
+  <text x="300" y="188"
+        class="tagline ink"
+        text-anchor="middle"
+        font-size="11">M A I S O N   D E   C R E A Ț I E</text>
+</svg>

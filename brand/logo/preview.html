@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S'Atelier — identitate vizuală</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --cream: #f5efe6;
+    --gold: #b8860b;
+    --paper: #faf7f2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Georgia", "Cormorant Garamond", serif;
+    background: var(--paper);
+    color: var(--ink);
+  }
+  header {
+    padding: 80px 40px 40px;
+    text-align: center;
+    border-bottom: 1px solid rgba(26,26,26,0.08);
+  }
+  header h1 {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.6em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--gold);
+  }
+  header p {
+    margin-top: 12px;
+    font-style: italic;
+    color: #555;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    padding: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid rgba(26,26,26,0.08);
+    border-radius: 4px;
+    padding: 40px 32px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 300px;
+  }
+  .card.dark { background: var(--ink); }
+  .card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 180px;
+  }
+  .card figcaption {
+    margin-top: 24px;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #777;
+  }
+  .card.dark figcaption { color: #aaa; }
+
+  .palette {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    padding: 24px 48px 64px;
+  }
+  .swatch {
+    width: 120px;
+    height: 120px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-end;
+    padding: 12px;
+    font-family: "Futura", "Helvetica Neue", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+  }
+  .swatch.ink   { background: var(--ink);   color: var(--cream); }
+  .swatch.gold  { background: var(--gold);  color: #fff; }
+  .swatch.cream { background: var(--cream); color: var(--ink); border: 1px solid #ddd; }
+  .swatch.paper { background: var(--paper); color: var(--ink); border: 1px solid #ddd; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>S &nbsp;·&nbsp; A T E L I E R</h1>
+  <p>Identitate vizuală — propunere</p>
+</header>
+
+<section class="grid">
+  <figure class="card">
+    <img src="satelier-primary.svg" alt="Logo primar S'Atelier">
+    <figcaption>Primar · orizontal</figcaption>
+  </figure>
+
+  <figure class="card">
+    <img src="satelier-monogram.svg" alt="Monogramă S'Atelier">
+    <figcaption>Monogramă · ștampilă</figcaption>
+  </figure>
+
+  <figure class="card">
+    <img src="satelier-minimal.svg" alt="Variantă minimală S'Atelier">
+    <figcaption>Minimal · wordmark</figcaption>
+  </figure>
+
+  <figure class="card dark">
+    <img src="satelier-reversed.svg" alt="Variantă inversată S'Atelier">
+    <figcaption>Reversed · dark</figcaption>
+  </figure>
+</section>
+
+<div class="palette">
+  <div class="swatch ink">#1A1A1A</div>
+  <div class="swatch gold">#B8860B</div>
+  <div class="swatch cream">#F5EFE6</div>
+  <div class="swatch paper">#FAF7F2</div>
+</div>
+
+</body>
+</html>

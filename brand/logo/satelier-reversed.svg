@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 600 220"
+     role="img"
+     aria-label="S'Atelier — variantă inversată pe fundal închis">
+  <title>S'Atelier — reversed</title>
+  <desc>Varianta pe fundal negru de cerneală, pentru ambalaje premium și contexte de luxury.</desc>
+
+  <rect width="600" height="220" fill="#1a1a1a"/>
+
+  <defs>
+    <style>
+      .cream    { fill: #f5efe6; }
+      .gold     { fill: #c9a227; }
+      .wordmark {
+        font-family: "Didot", "Bodoni 72", "Playfair Display", "Cormorant Garamond", "Georgia", serif;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+      }
+      .tagline  {
+        font-family: "Futura", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.52em;
+      }
+    </style>
+  </defs>
+
+  <g stroke="#c9a227" stroke-width="1.4" stroke-linecap="round" fill="none">
+    <line x1="120" y1="52" x2="260" y2="52"/>
+    <circle cx="300" cy="52" r="3.2" fill="#c9a227" stroke="none"/>
+    <line x1="340" y1="52" x2="480" y2="52"/>
+  </g>
+
+  <text x="300" y="130"
+        class="wordmark cream"
+        text-anchor="middle"
+        font-size="82"
+        font-style="italic">S<tspan class="gold" font-style="normal">’</tspan>Atelier</text>
+
+  <g transform="translate(300 158)">
+    <path d="M -90 0 C -60 -10, -30 10, 0 0 C 30 -10, 60 10, 90 0"
+          fill="none" stroke="#c9a227" stroke-width="1.2" stroke-linecap="round"/>
+    <circle cx="90" cy="0" r="2.4" fill="none" stroke="#c9a227" stroke-width="1.2"/>
+    <line x1="-90" y1="0" x2="-98" y2="0" stroke="#f5efe6" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+
+  <text x="300" y="188"
+        class="tagline cream"
+        text-anchor="middle"
+        font-size="11">M A I S O N   D E   C R E A Ț I E</text>
+</svg>
